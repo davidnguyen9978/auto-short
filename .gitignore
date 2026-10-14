@@ -1,0 +1,43 @@
+# Local secrets; retain documented examples
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+
+# Dependencies, virtual environments and caches
+node_modules/
+.venv/
+.venv311/
+.cache/
+.remotion/
+.playwright/
+playwright-browsers/
+coverage/
+dist/
+build/
+*.tsbuildinfo
+*.log
+
+# Local machine metadata
+.DS_Store
+__MACOSX/
+
+# Render outputs and generated per-video media
+premium-text-to-video/videos/*
+!premium-text-to-video/videos/.gitkeep
+*.mp4
+*.webm
+premium-text-to-video/public/*/voice*.mp3
+premium-text-to-video/public/*/words.json
+premium-text-to-video/public/*/timeline.json
+premium-text-to-video/public/*/demo.json
+premium-text-to-video/public/*/article-video.json
+premium-text-to-video/public/*/source-evidence.json
+premium-text-to-video/public/*/evidence/
+premium-text-to-video/public/*/.demo-recording/
+
+# Template sync backups and state
+premium-text-to-video/.template-sync-state.json
+premium-text-to-video/.template-sync-backups/
+premium-text-to-video/.template-sync-bases/
